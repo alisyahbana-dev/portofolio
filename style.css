@@ -1,0 +1,87 @@
+/* CSS */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5); /* Gradasi latar belakang */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    animation: backgroundMove 10s linear infinite; /* Animasi latar belakang */
+}
+
+@keyframes backgroundMove {
+    0% {
+        background-position: 0% 50%; /* Awal */
+    }
+    100% {
+        background-position: 100% 50%; /* Akhir */
+    }
+}
+
+header {
+    background-color: rgba(248, 249, 250, 0.9); /* Warna latar belakang header dengan transparansi */
+}
+
+h1 {
+    color: #2C3E50; /* Biru Tua */
+    animation: fadeIn 1.5s ease-in-out; /* Animasi fade in */
+}
+
+h2 {
+    color: #2c504f; /* Biru Tua */
+    font-size: 1.6em;
+    border-bottom: 2px solid #2C3E50; /* Garis bawah untuk judul */
+    padding-bottom: 5px;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto; /* Center container */
+}
+
+ul {
+    list-style-type: none; /* Menghilangkan bullet */
+    padding: 0;
+}
+
+.btn-danger {
+    background-color: #E74C3C; /* Merah */
+    border-color: #E74C3C; /* Merah */
+    transition: background-color 0.3s; /* Transisi halus saat hover */
+}
+
+.btn-danger:hover {
+    background-color: #c0392b; /* Warna lebih gelap saat hover */
+}
+
+.social-icons a {
+    margin: 0 10px; /* Jarak antar icon */
+    color: #2C3E50; /* Biru Tua untuk ikon */
+    transition: transform 0.3s; /* Transisi halus untuk transform */
+}
+
+.social-icons a:hover {
+    color: #E74C3C; /* Merah saat hover */
+    transform: scale(1.1); /* Membesar saat hover */
+}
+
+/* Animasi Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Mulai dari transparan */
+    }
+    to {
+        opacity: 1; /* Berakhir dengan terlihat */
+    }
+}
+
+/* CSS untuk mengatur tata letak teks dan gambar profil */
+.d-flex {
+    display: flex; /* Menggunakan Flexbox untuk tata letak */
+    align-items: center; /* Menjaga agar gambar dan teks sejajar vertikal */
+    justify-content: center; /* Mengatur konten di tengah */
+}
+
+.ml-3 {
+    margin-left: 15px; /* Memberikan jarak antara gambar dan teks */
+}
